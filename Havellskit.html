@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Havells 5-in-1 Multi Styling Kit | Beauty Deal</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {
+      background: linear-gradient(135deg, #ffe3f3, #fff);
+      color: #222;
+      overflow-x: hidden;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}}
+
+    .hero {
+      position: relative;
+      text-align: center;
+      background: #fff;
+      padding: 30px;
+    }
+    .hero img {
+      width: 80%;
+      border-radius: 15px;
+      transition: transform 0.4s;
+    }
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #ff0077;
+      margin-top: 15px;
+    }
+    .rating {
+      color: gold;
+      font-size: 1.3rem;
+    }
+    .features {
+      padding: 20px 30px;
+      line-height: 1.8;
+    }
+    .features h2 {
+      color: #222;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    .highlight {
+      color: #ff0077;
+      font-weight: 600;
+    }
+    .timer {
+      background: #ff0077;
+      color: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 20px;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from {box-shadow: 0 0 5px #ff0077;}
+      to {box-shadow: 0 0 20px #ff66aa;}
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      background: linear-gradient(45deg, #ff0077, #ff66aa);
+      color: #fff;
+      padding: 15px 20px;
+      margin: 30px auto;
+      width: 80%;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #ff66aa, #ff0077);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="hero">
+      <img src="https://share.google/p0jRwgFbWEeKB1iXR" alt="Havells 5-in-1 Multi Styling Kit">
+      <h1>✨ Havells 5-in-1 Multi Styling Kit (HC4045)</h1>
+      <div class="rating">⭐⭐⭐⭐⭐ (4.4/5 Rated by 3,000+ users)</div>
+    </div>
+
+    <div class="features">
+      <h2>💄 Product Highlights:</h2>
+      <ul>
+        <li>💇‍♀️ <span class="highlight">5-in-1 styling kit</span> – Straightener, Curler, Crimper, Conical Curler & Volume Brush.</li>
+        <li>🔥 Ceramic coated plates for smooth & safe styling.</li>
+        <li>⚡ Fast heat-up & long-lasting shine effect.</li>
+        <li>🛡️ <span class="highlight">2 Years Havells Guarantee</span>.</li>
+        <li>🎁 Ideal for parties, travel & everyday beauty looks.</li>
+      </ul>
+    </div>
+
+    <div class="timer">
+      🎉 Limited Time Offer! Grab your Havells Kit before the deal ends.
+    </div>
+
+    <a class="btn" href="https://www.amazon.in/dp/B079QJW5CW/ref=cm_sw_r_as_gl_apa_gl_i_TVKTQFYVPRF498N91XET?linkCode=ml1&tag=gauravchavan1-21&linkId=e5d96137ff4a69ee6cd506a9c05d6d82" target="_blank">
+      🔥 Buy Now on Amazon
+    </a>
+
+    <footer>
+      <p>Powered by <strong>The Diploma Engineer</strong> | Amazon Affiliate Partner</p>
+    </footer>
+  </div>
+
+  <script>
+    // Dynamic Countdown Timer
+    const timerEl = document.querySelector('.timer');
+    let seconds = 3600; // 1 hour deal
+    setInterval(() => {
+      const m = Math.floor(seconds / 60);
+      const s = seconds % 60;
+      timerEl.textContent = `⏰ Offer ends in ${m}m ${s}s — Hurry up!`;
+      seconds--;
+      if (seconds < 0) {
+        timerEl.textContent = "🎁 Offer expired! Check latest deals below 👇";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
